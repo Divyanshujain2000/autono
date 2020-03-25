@@ -32,7 +32,7 @@ void messageCb( const std_msgs::Int16& toggle_msg){
   int i;
   for(i=0;i<toggle_msg.data;i++)
    {
-  digitalWrite(13, HIGH-digitalRead(13));
+  digitalWrite(LED, HIGH-digitalRead(13));
   delay(200);
   // blink the led
    }
